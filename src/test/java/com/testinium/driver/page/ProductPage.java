@@ -26,7 +26,7 @@ public class ProductPage {
 
         methods.sendKeys(By.id("search-input"), "oyuncak");
         methods.click(By.cssSelector(".common-sprite.button-search"));
-        methods.scrollWithAction(By.xpath("//*[@id=\"product-565088\"]/div[1]/div[1]/div/a/img"));// 7. ürüne scroll işlemi
+        methods.scrollWithAction(By.xpath("//*[@id=\"product-565088\"]/div[1]/div[1]/div/a/img"));// 7. ürüne scroll işlemi//xpath yazamadım.
         methods.waitBySecond(3);
 
     }
@@ -75,9 +75,9 @@ public class ProductPage {
     }
 
     public void goHoby(){
-        try {methods.scrollWithAction(By.xpath("//*[@id=\"mainNav\"]/div[1]/ul/li[1]/div[2]/ul/li[3]/span"));
+        try {methods.scrollWithAction(By.xpath("//*[@id=\"mainNav\"]/div[1]/ul/li[1]/div[2]/ul/li[3]/span"));//xpath yazamadım.
             methods.waitBySecond(5);
-            methods.click(By.xpath("//*[@id=\"mainNav\"]/div[1]/ul/li[1]/div[2]/ul/li[3]/div/div[1]/div/ul[2]/li[14]/a"));
+            methods.click(By.xpath("//*[@id=\"mainNav\"]/div[1]/ul/li[1]/div[2]/ul/li[3]/div/div[1]/div/ul[2]/li[14]/a"));//xpath yazamadım.
             methods.waitBySecond(5);
             methods.click(By.cssSelector(".pr-img-link"));
 
@@ -89,7 +89,7 @@ public class ProductPage {
     public void goTurClassics(){
         try {methods.click(By.xpath("//*[@id=\"landing-point\"]/div[4]/a[2]/img"));
             methods.waitBySecond(5);
-            methods.selectByText(By.xpath("//*[@id=\"content\"]/div/div/div[1]/div/div[1]/select"),"Yüksek Oylama");
+            methods.selectByText(By.xpath("//*[@id=\"content\"]/div/div/div[1]/div/div[1]/select"),"Yüksek Oylama");//xpath yazamadım.
             methods.waitBySecond(5);
 
         }catch (Exception e){
@@ -103,8 +103,8 @@ public class ProductPage {
         methods.waitBySecond(3);
     }
     public void upDateCart(){
-        methods.upDateKeys(By.xpath("//*[@id=\"cart_module\"]/div[1]/table/tbody/tr/td[4]/form/input[1]"), String.valueOf(2));
-        methods.click(By.xpath("//*[@id=\"cart_module\"]/div[1]/table/tbody/tr/td[4]/form/i"));
+        methods.upDateKeys(By.xpath("//*[@id=\"cart_module\"]/div[1]/table/tbody/tr/td[4]/form/input[1]"), String.valueOf(2));//xpath yazamadım.
+        methods.click(By.xpath("//i[@class=\"fa fa-refresh green-icon\"]"));
 
 
     }
@@ -170,8 +170,6 @@ public class ProductPage {
         }catch (Exception e){
             System.out.println("cikis adiminda hata alindi");
         }
-
-
 
     }
 
