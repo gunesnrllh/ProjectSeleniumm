@@ -32,13 +32,13 @@ public class ProductPage {
     }
 
     public void addToFav(){
-        methods.click(By.xpath("//*[@id=\"product-577328\"]/div[2]/div[3]/a[4]"));
-        methods.waitBySecond(3);
-        methods.click(By.xpath("//*[@id=\"product-565088\"]/div[2]/div[3]/a[4]"));
-        methods.waitBySecond(3);
-        methods.click(By.xpath("//*[@id=\"product-580553\"]/div[2]/div[3]/a[4]"));
-        methods.waitBySecond(3);
-        methods.click(By.xpath("//*[@id=\"product-467705\"]/div[2]/div[3]/a[4]"));
+        methods.click(By.xpath("//div[@class='product-cr'][8]//i[@class='fa fa-heart']"));
+        methods.waitBySecond(1);
+        methods.click(By.xpath("//div[@class='product-cr'][2]//i[@class='fa fa-heart']"));
+        methods.waitBySecond(1);
+        methods.click(By.xpath("//div[@class='product-cr'][1]//i[@class='fa fa-heart']"));
+        methods.waitBySecond(1);
+        methods.click(By.xpath("//div[@class='product-cr'][3]//i[@class='fa fa-heart']"));
     }
     public void checkFav(){
         try {
@@ -52,7 +52,7 @@ public class ProductPage {
 
     public void randomBookSelect(){
          //rastgele kitap seçimi
-        methods.click(By.cssSelector(".add-to-cart"));
+        methods.click(By.cssSelector(".add-to-cart"));// aynı sınıfa ait herhangi bir kitabın eklenmesi
 
     }
     public void goToFavorites(){
