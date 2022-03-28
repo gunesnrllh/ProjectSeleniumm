@@ -32,13 +32,13 @@ public class ProductPage {
     }
 
     public void addToFav(){
+        methods.click(By.xpath("//div[@class='product-cr'][7]//i[@class='fa fa-heart']"));
+        methods.waitBySecond(5);
         methods.click(By.xpath("//div[@class='product-cr'][8]//i[@class='fa fa-heart']"));
-        methods.waitBySecond(1);
-        methods.click(By.xpath("//div[@class='product-cr'][2]//i[@class='fa fa-heart']"));
-        methods.waitBySecond(1);
-        methods.click(By.xpath("//div[@class='product-cr'][1]//i[@class='fa fa-heart']"));
-        methods.waitBySecond(1);
-        methods.click(By.xpath("//div[@class='product-cr'][3]//i[@class='fa fa-heart']"));
+        methods.waitBySecond(5);
+        methods.click(By.xpath("//div[@class='product-cr'][9]//i[@class='fa fa-heart']"));
+        methods.waitBySecond(5);
+        methods.click(By.xpath("//div[@class='product-cr'][10]//i[@class='fa fa-heart']"));
     }
     public void checkFav(){
         try {
@@ -67,7 +67,7 @@ public class ProductPage {
 
     public void removeElements(){
         try {
-            methods.click(By.xpath("//*[@id=\"product-565088\"]/div[2]/div[3]/a[3]"));// 3.sıradaki eleman silindi
+            methods.click(By.xpath("div[@class=\"product-cr\"][3]//i[@class=\fa fa-heart-o"));// 3.sıradaki eleman silindi
             methods.waitBySecond(5);
         }catch (Exception e){
             System.out.println("eleman silinemedi");
